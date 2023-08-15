@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation API</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <style>
+        #bing-maps {
+            border-radius: 10px;
+            position: relative;
+            width: 800px;
+            height: 400px;
+            transition: .75s;
+            overflow: hidden;
+        }
+
+        #bing-maps:hover {
+            filter: drop-shadow(0px 8px 16px black);
+            transform: scale(1.1);
+            transition: .75s;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="d-flex flex-column justify-content-around align-items-center" style="height: 100vh;">
+        <div id="bing-maps">
+        </div>
+        <button class="btn btn-primary mx-auto" id="find-client" onclick="findClient();">
+            Show Map
+        </button>
+    </div>
+
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=BingMaps' async
+        defer></script>
+    <script type="text/javascript">
+        function BingMaps(position) {
+            var map = new Microsoft.Maps.Map("#bing-maps", {
+                credentials: 'Ahv2w-1sFF-WboZIn1j3VFgPli0RwSew0cEaJg7mrfIiNgU0hWNz1Qdb44PmC5oR ',
+                center: new Microsoft.Maps.Location(position.coords.latitude, position.coords.longitude),
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+                zoom: 15
+            });
+        }
+        function findClient() {
+            function geoSuccess(position) {
+                BingMaps(position);
+            }
+            function geoError() {
+                window.alert("Location Access Denied!")
+            }
+            if (!navigator.geolocation) {
+                window.alert("Client may not have support for the Geolocation API.")
+            } else {
+                navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+            }
+        }
+    </script>
+</body>
+
+</html>
