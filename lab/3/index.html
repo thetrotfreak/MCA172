@@ -9,6 +9,7 @@
         crossorigin="anonymous">
     <style>
         #bing-maps {
+            margin-top: 12px;
             border-radius: 10px;
             position: relative;
             width: 800px;
@@ -26,12 +27,16 @@
 </head>
 
 <body class="bg-dark">
-    <div class="d-flex flex-column justify-content-around align-items-center" style="height: 100vh;">
+    <div class="d-flex flex-column justify-content-between align-items-center" style="height: 100vh;">
         <div id="bing-maps">
         </div>
         <button class="btn btn-primary mx-auto" id="find-client" onclick="findClient();">
             Show Map
         </button>
+        <div>
+            <canvas id="canvas">
+            </canvas>
+        </div>
     </div>
 
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=BingMaps' async
@@ -44,6 +49,10 @@
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial,
                 zoom: 15
             });
+            var pin = new Microsoft.Maps.Pushpin(map.getCenter(), {
+                icon: 'geo-alt-fill.svg',
+            })
+            map.entities.push(pin);
         }
         function findClient() {
             function geoSuccess(position) {
@@ -58,6 +67,26 @@
                 navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
             }
         }
+
+
+        const canvas = document.getElementById("canvas");
+        const canvas_context = canvas.getContext("2d");
+
+        canvas_context.fillStyle = "rgb(242, 80, 34)";
+        canvas_context.fillRect(0, 0, 45, 45);
+
+        canvas_context.fillStyle = "rgb(127, 186, 0)";
+        canvas_context.fillRect(50, 0, 45, 45);
+
+        canvas_context.fillStyle = "rgb(0, 164, 239)";
+        canvas_context.fillRect(0, 50, 45, 45);
+
+        canvas_context.fillStyle = "rgb(255, 185, 0)";
+        canvas_context.fillRect(50, 50, 45, 45);
+
+        canvas_context.font = "32px Arial";
+        canvas_context.fillStyle = "rgb(115, 115, 115)";
+        canvas_context.fillText("Microsoft", 105, 95);
     </script>
 </body>
 
