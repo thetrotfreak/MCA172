@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="employee_schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<employees>
+    <employee>
+        <id>1</id>
+        <personal>
+            <name>
+                <first>John</first>
+                <last>Doe</last>
+            </name>
+            <dob>
+                <yyyy>1980</yyyy>
+                <mm>8</mm>
+                <dd>19</dd>
+            </dob>
+            <gender>Male</gender>
+        </personal>
+        <employment>
+            <position>CFO</position>
+            <salary>775000</salary>
+        </employment>
+        <contact>
+            <email>john.doe@gmail.com</email>
+            <phone>7440024889</phone>
+        </contact>
+    </employee>
+    <employee>
+        <id>2</id>
+        <personal>
+            <name>
+                <first>Olivia</first>
+                <last>Jade</last>
+            </name>
+            <dob>
+                <yyyy>1990</yyyy>
+                <mm>9</mm>
+                <dd>19</dd>
+            </dob>
+            <gender>Female</gender>
+        </personal>
+        <employment>
+            <position>Cloud Architect</position>
+            <salary>187000</salary>
+        </employment>
+        <contact>
+            <email>olivia.jade@gmail.com</email>
+            <phone>6127967356</phone>
+        </contact>
+    </employee>
+    <employee>
+        <id>3</id>
+        <personal>
+            <name>
+                <first>Jacob</first>
+                <last>Elordi</last>
+            </name>
+            <dob>
+                <yyyy>1997</yyyy>
+                <mm>6</mm>
+                <dd>26</dd>
+            </dob>
+            <gender>Male</gender>
+        </personal>
+        <employment>
+            <position>Junior Systems Engineer</position>
+            <salary>189000</salary>
+        </employment>
+        <contact>
+            <email>jacob.elordi@gmail.com</email>
+            <phone>7979959726</phone>
+        </contact>
+    </employee>
+</employees>
