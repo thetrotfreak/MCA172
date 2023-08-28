@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="employee_schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="employee_transform.xsl" type="text/xsl"?>
+<employees>
+    <employee>
+        <personal>
+            <name>
+                <first>John</first>
+                <last>Doe</last>
+            </name>
+            <dob>1980-08-19</dob>
+            <gender>Male</gender>
+        </personal>
+        <employment>
+            <id>1</id>
+            <position>CFO</position>
+            <salary>775000</salary>
+        </employment>
+        <contact>
+            <email>john.doe@gmail.com</email>
+            <phone>7440024889</phone>
+        </contact>
+    </employee>
+    <employee>
+        <personal>
+            <name>
+                <first>Olivia</first>
+                <last>Jade</last>
+            </name>
+            <dob>1990-09-19</dob>
+            <gender>Female</gender>
+        </personal>
+        <employment>
+            <id>2</id>
+            <position>Cloud Architect</position>
+            <salary>187000</salary>
+        </employment>
+        <contact>
+            <email>olivia.jade@gmail.com</email>
+            <phone>6127967356</phone>
+        </contact>
+    </employee>
+    <employee>
+        <personal>
+            <name>
+                <first>Jacob</first>
+                <last>Elordi</last>
+            </name>
+            <dob>1997-06-26</dob>
+            <gender>Male</gender>
+        </personal>
+        <employment>
+            <id>3</id>
+            <position>Junior Systems Engineer</position>
+            <salary>189000</salary>
+        </employment>
+        <contact>
+            <email>jacob.elordi@gmail.com</email>
+            <phone>7979959726</phone>
+        </contact>
+    </employee>
+</employees>
