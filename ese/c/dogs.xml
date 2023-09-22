@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="dogs.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<dogs>
+    <dog>
+        <breed>Basset Hound</breed>
+        <color>Tricolor</color>
+        <country>France</country>
+    </dog>
+    <dog>
+        <breed>Bernese Mountain</breed>
+        <color>Black, White and Rust</color>
+        <country>Switzerland</country>
+    </dog>
+    <dog>
+        <breed>Rhodesian Ridgeback</breed>
+        <color>Wheaten</color>
+        <country>Zimbabwe</country>
+    </dog>
+    <dog>
+        <breed>Irish Setter</breed>
+        <color>Mahogany</color>
+        <country>Ireland</country>
+    </dog>
+    <dog>
+        <breed>Shetland</breed>
+        <color>Various</color>
+        <country>United Kingdom</country>
+    </dog>
+    <dog>
+        <breed>Miniature Schnauzer</breed>
+        <color>Salt and Pepper</color>
+        <country>Germany</country>
+    </dog>
+    <dog>
+        <breed>Alaskan Malamute</breed>
+        <color>Various</color>
+        <country>United States</country>
+    </dog>
+    <dog>
+        <breed>Collir</breed>
+        <color>Sable and White</color>
+        <country>United Kingdom</country>
+    </dog>
+    <dog>
+        <breed>Papillon</breed>
+        <color>Various</color>
+        <country>France</country>
+    </dog>
+    <dog>
+        <breed>West Highland White Terrier</breed>
+        <color>White</color>
+        <country>United Kingdom</country>
+    </dog>
+</dogs>
