@@ -81,8 +81,16 @@ function fakestore(sort_by) {
             return 0;
           });
           populateProductCatalog(products, true);
-        } else {
+        } else if (sort_by === "") {
           populateProductCatalog(products, false);
+        } else {
+          let filtered_products = [];
+          products.filter((product) => {
+            if (sort_by === product.category) {
+              filtered_products.push(product);
+            }
+          });
+          populateProductCatalog(filtered_products, true);
         }
       }
     }
@@ -105,4 +113,4 @@ search_button.addEventListener("click", () => {
   const search_query = search_input.value;
   fakestore(search_query);
 });
-window.onload = fakestore();
+window.onload = fakestore("");
