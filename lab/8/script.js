@@ -82,15 +82,8 @@ function fakestore(sort_by) {
           });
           populateProductCatalog(products, true);
         } else {
-          let filtered_products = [];
-          products.filter((product) => {
-            if (sort_by === product.category) {
-              filtered_products.push(product);
-            }
-          });
-          populateProductCatalog(filtered_products, true);
+          populateProductCatalog(products, false);
         }
-      } else {
       }
     }
   };
