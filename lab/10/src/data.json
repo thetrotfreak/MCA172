@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Luxury Villa",
+        "location": "Miami, FL",
+        "price": 1000000,
+        "description": "Beautiful luxury villa with ocean view."
+    },
+    {
+        "id": 2,
+        "name": "Cozy Apartment",
+        "location": "New York, NY",
+        "price": 500000,
+        "description": "Comfortable apartment in the heart of the city."
+    }
+]
