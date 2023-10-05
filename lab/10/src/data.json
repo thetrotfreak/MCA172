@@ -1,16 +1,72 @@
 [
     {
         "id": 1,
-        "name": "Luxury Villa",
-        "location": "Miami, FL",
-        "price": 1000000,
-        "description": "Beautiful luxury villa with ocean view."
+        "name": "Spacious Apartment",
+        "location": "Delhi, DL",
+        "price": 7500000,
+        "description": "Large apartment in the heart of Delhi."
     },
     {
         "id": 2,
-        "name": "Cozy Apartment",
-        "location": "New York, NY",
-        "price": 500000,
-        "description": "Comfortable apartment in the heart of the city."
+        "name": "Hilltop Villa",
+        "location": "Manali, HP",
+        "price": 12000000,
+        "description": "Stunning villa with panoramic views in Manali."
+    },
+    {
+        "id": 3,
+        "name": "Spacious Bungalow",
+        "location": "Mumbai, MH",
+        "price": 15000000,
+        "description": "Large bungalow in a prime location of Mumbai."
+    },
+    {
+        "id": 4,
+        "name": "Hillside Retreat",
+        "location": "Shimla, HP",
+        "price": 8000000,
+        "description": "Scenic property with mountain views in Shimla."
+    },
+    {
+        "id": 5,
+        "name": "Beachside Condo",
+        "location": "Goa, GA",
+        "price": 7000000,
+        "description": "Modern condo with beach access in Goa."
+    },
+    {
+        "id": 6,
+        "name": "Heritage Mansion",
+        "location": "Jaipur, RJ",
+        "price": 12000000,
+        "description": "Historic mansion with royal architecture in Jaipur."
+    },
+    {
+        "id": 7,
+        "name": "Lakeview Cottage",
+        "location": "Nainital, UK",
+        "price": 9000000,
+        "description": "Quaint cottage overlooking the lake in Nainital."
+    },
+    {
+        "id": 8,
+        "name": "City View Penthouse",
+        "location": "Bangalore, KA",
+        "price": 9500000,
+        "description": "Elegant penthouse with panoramic city views in Bangalore."
+    },
+    {
+        "id": 9,
+        "name": "Riverside Retreat",
+        "location": "Rishikesh, UK",
+        "price": 6000000,
+        "description": "Tranquil property by the river in Rishikesh."
+    },
+    {
+        "id": 10,
+        "name": "Tea Estate",
+        "location": "Munnar, KL",
+        "price": 10000000,
+        "description": "Picturesque tea estate in the hills of Munnar."
     }
 ]
