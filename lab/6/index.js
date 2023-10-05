@@ -42,13 +42,13 @@ const validateEmailAddress = (event) => {
 };
 
 const validatePassword = (event) => {
-  emailAddress.classList.toggle(
+  password.classList.toggle(
     "is-valid",
-    emailAddressRegExp.test(event.target.value.trim())
+    passwordRegExp.test(event.target.value.trim())
   );
-  emailAddress.classList.toggle(
+  password.classList.toggle(
     "is-invalid",
-    !emailAddressRegExp.test(event.target.value.trim())
+    !passwordRegExp.test(event.target.value.trim())
   );
 };
 
