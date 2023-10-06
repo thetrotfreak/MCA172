@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import numeral from "numeral";
-import "./Property.css"; // Add this line to import the CSS file
+import "./Property.css";
 
 const Property = ({ property }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -26,7 +26,7 @@ const Property = ({ property }) => {
       <p>Price: {formatPrice(property.price)}</p>
       {showDetails && <p>{property.description}</p>}
       <button className="more-details" onClick={toggleDetails}>
-        More Details
+        Read more
       </button>
     </div>
   );

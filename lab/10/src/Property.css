@@ -1,8 +1,9 @@
 .property-card {
-  border: 1px solid #ccc;
+  box-shadow: 8px 8px 16px #1a1a1a;
+  border: 1px solid transparent;
   padding: 10px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   width: 250px;
   position: relative;
   transition: all 0.3s;
@@ -10,11 +11,16 @@
 }
 
 .more-details {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+  outline: none;
 }
+
+.more-details:hover {
+  outline: none;
+  background-color: #646cff;
+  transition: all 0.3s;
+}
+
 .property-card:hover {
-  transform: scale(1.15);
-  border: 2px solid #ccc;
+  box-shadow: 12px 12px 24px 12px #1a1a1a;
+  transform: scale(1.1);
 }

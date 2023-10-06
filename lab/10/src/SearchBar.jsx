@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import "./SearchBar.css"; // Add this line to import the CSS file
+import { useState } from "react";
+import "./SearchBar.css";
+import "./index.css";
 
 const SearchBar = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,14 +11,13 @@ const SearchBar = ({ handleSearch }) => {
   };
 
   return (
-    <div className="search-bar">
+    <div>
       <input
         type="text"
         placeholder="Search properties"
         value={searchTerm}
         onChange={handleChange}
       />
-      <button className="search-button">Search</button>
     </div>
   );
 };
